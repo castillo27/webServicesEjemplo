@@ -1,0 +1,22 @@
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\Protell.Server.DAL.dll.config
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\Protell.Server.DAL.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\EntityFramework.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Debug\EntityFramework.xml
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\obj\Debug\Protell.Server.DAL.csprojResolveAssemblyReference.cache
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\obj\Debug\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\obj\Debug\Protell.Server.DAL.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\Protell.Server.DAL.dll.config
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\Protell.Server.DAL.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\EntityFramework.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\bin\Debug\EntityFramework.xml
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\obj\Debug\Protell.Server.DAL.csprojResolveAssemblyReference.cache
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\obj\Debug\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Server.DAL\obj\Debug\Protell.Server.DAL.pdb

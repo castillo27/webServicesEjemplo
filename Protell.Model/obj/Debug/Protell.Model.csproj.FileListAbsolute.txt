@@ -1,0 +1,8 @@
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Model\bin\Debug\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Model\bin\Debug\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Model\obj\Debug\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Model\obj\Debug\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Model\bin\Debug\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Model\bin\Debug\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Model\obj\Debug\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\Servicios Ejemplo\Protell.Model\obj\Debug\Protell.Model.pdb

@@ -1,0 +1,11 @@
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\Protell.Server.DAL.dll.config
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\Protell.Server.DAL.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\EntityFramework.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\Newtonsoft.Json.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\bin\Release\EntityFramework.xml
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\obj\Release\Protell.Server.DAL.csprojResolveAssemblyReference.cache
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\obj\Release\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Server.DAL\obj\Release\Protell.Server.DAL.pdb

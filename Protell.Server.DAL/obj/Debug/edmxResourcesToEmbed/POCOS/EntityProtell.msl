@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="devinmr3ModelStoreContainer" CdmEntityContainer="db_SeguimientoProtocolo_r2Entities">
+    <EntitySetMapping Name="APP_ROL">
+      <EntityTypeMapping TypeName="devinmr3Model.APP_ROL">
+        <MappingFragment StoreEntitySet="APP_ROL">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+          <ScalarProperty Name="RolName" ColumnName="RolName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APP_USUARIO_ROL">
+      <EntityTypeMapping TypeName="devinmr3Model.APP_USUARIO_ROL">
+        <MappingFragment StoreEntitySet="APP_USUARIO_ROL">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_CONDPRO">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_CONDPRO">
+        <MappingFragment StoreEntitySet="CAT_CONDPRO">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="CondicionName" ColumnName="CondicionName" />
+          <ScalarProperty Name="PathCodicion" ColumnName="PathCodicion" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_DEPENDENCIA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_DEPENDENCIA">
+        <MappingFragment StoreEntitySet="CAT_DEPENDENCIA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdDependencia" ColumnName="IdDependencia" />
+          <ScalarProperty Name="DependenciaName" ColumnName="DependenciaName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ESTRUCTURA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_ESTRUCTURA">
+        <MappingFragment StoreEntitySet="CAT_ESTRUCTURA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdEstructura" ColumnName="IdEstructura" />
+          <ScalarProperty Name="EstructuraName" ColumnName="EstructuraName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IdSistema" ColumnName="IdSistema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PUNTO_MEDICION_MAX_MIN">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_PUNTO_MEDICION_MAX_MIN">
+        <MappingFragment StoreEntitySet="CAT_PUNTO_MEDICION_MAX_MIN">
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdPuntoMedicionMaxMin" ColumnName="IdPuntoMedicionMaxMin" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SERVER_LASTDATA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_SERVER_LASTDATA">
+        <MappingFragment StoreEntitySet="CAT_SERVER_LASTDATA">
+          <ScalarProperty Name="IdServerLastData" ColumnName="IdServerLastData" />
+          <ScalarProperty Name="ActualDate" ColumnName="ActualDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SISTEMA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_SISTEMA">
+        <MappingFragment StoreEntitySet="CAT_SISTEMA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdSistema" ColumnName="IdSistema" />
+          <ScalarProperty Name="SistemaName" ColumnName="SistemaName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_SYNC">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_SYNC">
+        <MappingFragment StoreEntitySet="CAT_SYNC">
+          <ScalarProperty Name="IdSycn" ColumnName="IdSycn" />
+          <ScalarProperty Name="ActualDate" ColumnName="ActualDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_TIPO_PUNTO_MEDICION">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_TIPO_PUNTO_MEDICION">
+        <MappingFragment StoreEntitySet="CAT_TIPO_PUNTO_MEDICION">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdTipoPuntoMedicion" ColumnName="IdTipoPuntoMedicion" />
+          <ScalarProperty Name="TipoPuntoMedicionName" ColumnName="TipoPuntoMedicionName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_UNIDAD_MEDIDA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_UNIDAD_MEDIDA">
+        <MappingFragment StoreEntitySet="CAT_UNIDAD_MEDIDA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdUnidadMedida" ColumnName="IdUnidadMedida" />
+          <ScalarProperty Name="UnidadMedidaName" ColumnName="UnidadMedidaName" />
+          <ScalarProperty Name="UnidadMedidaShort" ColumnName="UnidadMedidaShort" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_UPLOAD_LOG">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_UPLOAD_LOG">
+        <MappingFragment StoreEntitySet="CAT_UPLOAD_LOG">
+          <ScalarProperty Name="IdUploadLog" ColumnName="IdUploadLog" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="IpDir" ColumnName="IpDir" />
+          <ScalarProperty Name="PcName" ColumnName="PcName" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CI_REGISTRO">
+      <EntityTypeMapping TypeName="devinmr3Model.CI_REGISTRO">
+        <MappingFragment StoreEntitySet="CI_REGISTRO">
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="HoraRegistro" ColumnName="HoraRegistro" />
+          <ScalarProperty Name="DiaRegistro" ColumnName="DiaRegistro" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="AccionActual" ColumnName="AccionActual" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REL_EST_PUNTOMED">
+      <EntityTypeMapping TypeName="devinmr3Model.REL_EST_PUNTOMED">
+        <MappingFragment StoreEntitySet="REL_EST_PUNTOMED">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdEstPuntoMed" ColumnName="IdEstPuntoMed" />
+          <ScalarProperty Name="IdEstructura" ColumnName="IdEstructura" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REL_ESTRUCTURA_DEPENDENCIA">
+      <EntityTypeMapping TypeName="devinmr3Model.REL_ESTRUCTURA_DEPENDENCIA">
+        <MappingFragment StoreEntitySet="REL_ESTRUCTURA_DEPENDENCIA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdEstructuraDependencia" ColumnName="IdEstructuraDependencia" />
+          <ScalarProperty Name="IdDependencia" ColumnName="IdDependencia" />
+          <ScalarProperty Name="IdEstructura" ColumnName="IdEstructura" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SpGdGetDatosEstructuras" FunctionName="devinmr3Model.Store.GD_GET_DATOSESTRUCTURAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.GdGetDatosEstructuras_Result">
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="CondicionName" ColumnName="CondicionName" />
+          <ScalarProperty Name="IniDate" ColumnName="IniDate" />
+          <ScalarProperty Name="NombreColumna" ColumnName="NombreColumna" />
+          <ScalarProperty Name="NumeroColumna" ColumnName="NumeroColumna" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="ROrder" ColumnName="ROrder" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SpGdGetDatosEstructuras2" FunctionName="devinmr3Model.Store.GD_GET_DATOSESTRUCTURAS_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.SpGdGetDatosEstructuras2_Result">
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="CondicionName" ColumnName="CondicionName" />
+          <ScalarProperty Name="IniDate" ColumnName="IniDate" />
+          <ScalarProperty Name="NombreColumna" ColumnName="NombreColumna" />
+          <ScalarProperty Name="NumeroColumna" ColumnName="NumeroColumna" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="ROrder" ColumnName="ROrder" />
+          <ScalarProperty Name="RowNum" ColumnName="RowNum" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spSelectLastCI_Registro" FunctionName="devinmr3Model.Store.spSelectLastCI_Registro">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spSelectLastCI_Registro_Result">
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="HoraRegistro" ColumnName="HoraRegistro" />
+          <ScalarProperty Name="DiaRegistro" ColumnName="DiaRegistro" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="AccionActual" ColumnName="AccionActual" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CAT_AGRUPADOR_ISOYETA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_AGRUPADOR_ISOYETA">
+        <MappingFragment StoreEntitySet="CAT_AGRUPADOR_ISOYETA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AgrupadorIsoyetaName" ColumnName="AgrupadorIsoyetaName" />
+          <ScalarProperty Name="IdAgrupadorIsoyeta" ColumnName="IdAgrupadorIsoyeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_LINKS">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_LINKS">
+        <MappingFragment StoreEntitySet="CAT_LINKS">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="LinkName" ColumnName="LinkName" />
+          <ScalarProperty Name="LinkUrl" ColumnName="LinkUrl" />
+          <ScalarProperty Name="IdLink" ColumnName="IdLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_OPERACION_ESTRUCTURA">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_OPERACION_ESTRUCTURA">
+        <MappingFragment StoreEntitySet="CAT_OPERACION_ESTRUCTURA">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OperacionEstrucuturaName" ColumnName="OperacionEstrucuturaName" />
+          <ScalarProperty Name="IdEstructura" ColumnName="IdEstructura" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="IdOperacionEstructura" ColumnName="IdOperacionEstructura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MODIFIEDDATAs">
+      <EntityTypeMapping TypeName="devinmr3Model.MODIFIEDDATA">
+        <MappingFragment StoreEntitySet="MODIFIEDDATA">
+          <ScalarProperty Name="ServerModifiedDate" ColumnName="ServerModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="IdSyncTable" ColumnName="IdSyncTable" />
+          <ScalarProperty Name="IdModifiedData" ColumnName="IdModifiedData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYNCTABLEs">
+      <EntityTypeMapping TypeName="devinmr3Model.SYNCTABLE">
+        <MappingFragment StoreEntitySet="SYNCTABLE">
+          <ScalarProperty Name="OrderTable" ColumnName="OrderTable" />
+          <ScalarProperty Name="SyncTableName" ColumnName="SyncTableName" />
+          <ScalarProperty Name="IdSyncTable" ColumnName="IdSyncTable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spDownloadCiRegistroOnDemand" FunctionName="devinmr3Model.Store.spDownloadCiRegistroOnDemand">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spDownloadCiRegistroOnDemand_Result">
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="HoraRegistro" ColumnName="HoraRegistro" />
+          <ScalarProperty Name="DiaRegistro" ColumnName="DiaRegistro" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="AccionActual" ColumnName="AccionActual" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="vAccion" ColumnName="vAccion" />
+          <ScalarProperty Name="vCondicion" ColumnName="vCondicion" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="IdUnidadMedida" ColumnName="IdUnidadMedida" />
+          <ScalarProperty Name="UnidadMedidaName" ColumnName="UnidadMedidaName" />
+          <ScalarProperty Name="UnidadMedidaShort" ColumnName="UnidadMedidaShort" />
+          <ScalarProperty Name="CondicionName" ColumnName="CondicionName" />
+          <ScalarProperty Name="PathCodicion" ColumnName="PathCodicion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spDownloadCiRegistroRecurrent" FunctionName="devinmr3Model.Store.spDownloadCiRegistroRecurrent">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spDownloadCiRegistroRecurrent_Result">
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="FechaCaptura" ColumnName="FechaCaptura" />
+          <ScalarProperty Name="HoraRegistro" ColumnName="HoraRegistro" />
+          <ScalarProperty Name="DiaRegistro" ColumnName="DiaRegistro" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="AccionActual" ColumnName="AccionActual" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spCommitBulkUpsertCiRegistroUploaded" FunctionName="devinmr3Model.Store.spCommitBulkUpsertCiRegistroUploaded">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spCommitBulkUpsertCiRegistroUploaded_Result">
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="APP_SETTINGS">
+      <EntityTypeMapping TypeName="devinmr3Model.APP_SETTINGS">
+        <MappingFragment StoreEntitySet="APP_SETTINGS">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SettingName" ColumnName="SettingName" />
+          <ScalarProperty Name="IdSettings" ColumnName="IdSettings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PROTOCOLO">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_PROTOCOLO">
+        <MappingFragment StoreEntitySet="CAT_PROTOCOLO">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="IdProtocolo" ColumnName="IdProtocolo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_PUNTO_MEDICION">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_PUNTO_MEDICION">
+        <MappingFragment StoreEntitySet="CAT_PUNTO_MEDICION">
+          <ScalarProperty Name="IdAccionActual" ColumnName="IdAccionActual" />
+          <ScalarProperty Name="Visibility" ColumnName="Visibility" />
+          <ScalarProperty Name="vCondicion" ColumnName="vCondicion" />
+          <ScalarProperty Name="vAccion" ColumnName="vAccion" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="latiitud" ColumnName="latiitud" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ParametroReferencia" ColumnName="ParametroReferencia" />
+          <ScalarProperty Name="ValorReferencia" ColumnName="ValorReferencia" />
+          <ScalarProperty Name="IdTipoPuntoMedicion" ColumnName="IdTipoPuntoMedicion" />
+          <ScalarProperty Name="IdUnidadMedida" ColumnName="IdUnidadMedida" />
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAT_ACCION_ACTUAL">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_ACCION_ACTUAL">
+        <MappingFragment StoreEntitySet="CAT_ACCION_ACTUAL">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="AccionAcualName" ColumnName="AccionAcualName" />
+          <ScalarProperty Name="IdAccionActual" ColumnName="IdAccionActual" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APP_USUARIO">
+      <EntityTypeMapping TypeName="devinmr3Model.APP_USUARIO">
+        <MappingFragment StoreEntitySet="APP_USUARIO">
+          <ScalarProperty Name="UsuarioPwd" ColumnName="UsuarioPwd" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IsMailSent" ColumnName="IsMailSent" />
+          <ScalarProperty Name="IsVerified" ColumnName="IsVerified" />
+          <ScalarProperty Name="IsNewUser" ColumnName="IsNewUser" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Puesto" ColumnName="Puesto" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="UsuarioCorreo" ColumnName="UsuarioCorreo" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spLogin" FunctionName="devinmr3Model.Store.spLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spLogin_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="UsuarioCorreo" ColumnName="UsuarioCorreo" />
+          <ScalarProperty Name="UsuarioPwd" ColumnName="UsuarioPwd" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Puesto" ColumnName="Puesto" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsNewUser" ColumnName="IsNewUser" />
+          <ScalarProperty Name="IsVerified" ColumnName="IsVerified" />
+          <ScalarProperty Name="IsMailSent" ColumnName="IsMailSent" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="CAT_PUNTOS_MEDICION_SHORTNAME">
+      <EntityTypeMapping TypeName="devinmr3Model.CAT_PUNTOS_MEDICION_SHORTNAME">
+        <MappingFragment StoreEntitySet="CAT_PUNTOS_MEDICION_SHORTNAME">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsModified" ColumnName="IsModified" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="IdShortName" ColumnName="IdShortName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CI_TRACKING">
+      <EntityTypeMapping TypeName="devinmr3Model.CI_TRACKING">
+        <MappingFragment StoreEntitySet="CI_TRACKING">
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="Equipo" ColumnName="Equipo" />
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Accion" ColumnName="Accion" />
+          <ScalarProperty Name="IdTracking" ColumnName="IdTracking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_ConsultaDemand" FunctionName="devinmr3Model.Store.sp_ConsultaDemand">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.sp_ConsultaDemand_Result">
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="latiitud" ColumnName="latiitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="UnidadMedidaShort" ColumnName="UnidadMedidaShort" />
+          <ScalarProperty Name="AccionActual" ColumnName="AccionActual" />
+          <ScalarProperty Name="CondicionName" ColumnName="CondicionName" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashableGraficaPuntoMedicion" FunctionName="devinmr3Model.Store.spGetHashableGraficaPuntoMedicion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashableGraficaPuntoMedicion_Result">
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashablePuntoMedicionAttributes" FunctionName="devinmr3Model.Store.spGetHashablePuntoMedicionAttributes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashablePuntoMedicionAttributes_Result">
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="IdTipoPuntoMedicion" ColumnName="IdTipoPuntoMedicion" />
+          <ScalarProperty Name="TipoPuntoMedicionName" ColumnName="TipoPuntoMedicionName" />
+          <ScalarProperty Name="IdUnidadMedida" ColumnName="IdUnidadMedida" />
+          <ScalarProperty Name="UnidadMedidaName" ColumnName="UnidadMedidaName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashableUltimaMedicion" FunctionName="devinmr3Model.Store.spGetHashableUltimaMedicion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashableUltimaMedicion_Result">
+          <ScalarProperty Name="IdTipoPuntoMedicion" ColumnName="IdTipoPuntoMedicion" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="IdCondicion" ColumnName="IdCondicion" />
+          <ScalarProperty Name="CondicionName" ColumnName="CondicionName" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashablePuntoMedicion" FunctionName="devinmr3Model.Store.spGetHashablePuntoMedicion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashablePuntoMedicion_Result">
+          <ScalarProperty Name="IdTipoPuntoMedicion" ColumnName="IdTipoPuntoMedicion" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="PuntoMedicionName" ColumnName="PuntoMedicionName" />
+          <ScalarProperty Name="latiitud" ColumnName="latiitud" />
+          <ScalarProperty Name="longitud" ColumnName="longitud" />
+          <ScalarProperty Name="dependencias" ColumnName="dependencias" />
+          <ScalarProperty Name="UnidadMedidaName" ColumnName="UnidadMedidaName" />
+          <ScalarProperty Name="UnidadMedidaShort" ColumnName="UnidadMedidaShort" />
+          <ScalarProperty Name="ParametroMedicion" ColumnName="ParametroMedicion" />
+          <ScalarProperty Name="ultimaActualización" ColumnName="ultimaActualización" />
+          <ScalarProperty Name="UltimaCondicion" ColumnName="UltimaCondicion" />
+          <ScalarProperty Name="SistemaName" ColumnName="SistemaName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashableGraficaLumbreras" FunctionName="devinmr3Model.Store.spGetHashableGraficaLumbreras">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashableGraficaLumbreras_Result">
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashableGraficaPromedio" FunctionName="devinmr3Model.Store.spGetHashableGraficaPromedio">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashableGraficaPromedio_Result">
+          <ScalarProperty Name="FechaNumerica" ColumnName="FechaNumerica" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetHashableIsoyetaRangosLabels" FunctionName="devinmr3Model.Store.spGetHashableIsoyetaRangosLabels">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="devinmr3Model.spGetHashableIsoyetaRangosLabels_Result">
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Etiqueta" ColumnName="Etiqueta" />
+          <ScalarProperty Name="ColorHex" ColumnName="ColorHex" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="REL_ROL_PUNTOMEDICION">
+      <EntityTypeMapping TypeName="devinmr3Model.REL_ROL_PUNTOMEDICION">
+        <MappingFragment StoreEntitySet="REL_ROL_PUNTOMEDICION">
+          <ScalarProperty Name="ServerLastModifiedDate" ColumnName="ServerLastModifiedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IdPuntoMedicion" ColumnName="IdPuntoMedicion" />
+          <ScalarProperty Name="IdRol" ColumnName="IdRol" />
+          <ScalarProperty Name="IdRel" ColumnName="IdRel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

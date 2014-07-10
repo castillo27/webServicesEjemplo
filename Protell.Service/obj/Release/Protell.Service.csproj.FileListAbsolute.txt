@@ -1,0 +1,16 @@
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Service.dll.config
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Service.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Service.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Newtonsoft.Json.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Model.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Server.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.ViewModel.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.DAL.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\RestSharp.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Model.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.Server.DAL.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.ViewModel.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\bin\Protell.DAL.pdb
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\obj\Release\Protell.Service.csprojResolveAssemblyReference.cache
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\obj\Release\Protell.Service.dll
+C:\Users\isaac\Documents\Visual Studio 2013\Projects\wpfsistemalluviasv2\Protell.Service\obj\Release\Protell.Service.pdb

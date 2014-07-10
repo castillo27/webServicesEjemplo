@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="devinmr3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="APP_ROL">
+    <Key>
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdRol" Type="bigint" Nullable="false" />
+    <Property Name="RolName" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="APP_SETTINGS">
+    <Key>
+      <PropertyRef Name="IdSettings" />
+    </Key>
+    <Property Name="IdSettings" Type="bigint" Nullable="false" />
+    <Property Name="SettingName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Value" Type="nvarchar" MaxLength="250" />
+    <Property Name="LastModifiedDate" Type="bigint" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="APP_USUARIO">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="bigint" Nullable="false" />
+    <Property Name="UsuarioCorreo" Type="nvarchar" MaxLength="250" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Area" Type="nvarchar" MaxLength="250" />
+    <Property Name="Puesto" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="IsNewUser" Type="bit" Nullable="false" />
+    <Property Name="IsVerified" Type="bit" Nullable="false" />
+    <Property Name="IsMailSent" Type="bit" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+    <Property Name="UsuarioPwd" Type="varbinary" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="APP_USUARIO_ROL">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdUsuario" Type="bigint" Nullable="false" />
+    <Property Name="IdRol" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_ACCION_ACTUAL">
+    <Key>
+      <PropertyRef Name="IdAccionActual" />
+    </Key>
+    <Property Name="IdAccionActual" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccionAcualName" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_AGRUPADOR_ISOYETA">
+    <Key>
+      <PropertyRef Name="IdAgrupadorIsoyeta" />
+    </Key>
+    <Property Name="IdAgrupadorIsoyeta" Type="bigint" Nullable="false" />
+    <Property Name="AgrupadorIsoyetaName" Type="nvarchar" MaxLength="15" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_CONDPRO">
+    <Key>
+      <PropertyRef Name="IdCondicion" />
+    </Key>
+    <Property Name="IdCondicion" Type="bigint" Nullable="false" />
+    <Property Name="CondicionName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="PathCodicion" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_DEPENDENCIA">
+    <Key>
+      <PropertyRef Name="IdDependencia" />
+    </Key>
+    <Property Name="IdDependencia" Type="bigint" Nullable="false" />
+    <Property Name="DependenciaName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_ESTRUCTURA">
+    <Key>
+      <PropertyRef Name="IdEstructura" />
+    </Key>
+    <Property Name="IdEstructura" Type="bigint" Nullable="false" />
+    <Property Name="EstructuraName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="IdSistema" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_LINKS">
+    <Key>
+      <PropertyRef Name="IdLink" />
+    </Key>
+    <Property Name="IdLink" Type="bigint" Nullable="false" />
+    <Property Name="LinkUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="LinkName" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_OPERACION_ESTRUCTURA">
+    <Key>
+      <PropertyRef Name="IdOperacionEstructura" />
+    </Key>
+    <Property Name="IdOperacionEstructura" Type="bigint" Nullable="false" />
+    <Property Name="IdCondicion" Type="bigint" Nullable="false" />
+    <Property Name="IdEstructura" Type="bigint" Nullable="false" />
+    <Property Name="OperacionEstrucuturaName" Type="nvarchar" MaxLength="1500" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_PROTOCOLO">
+    <Key>
+      <PropertyRef Name="IdProtocolo" />
+    </Key>
+    <Property Name="IdProtocolo" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPuntoMedicion" Type="bigint" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_PUNTO_MEDICION">
+    <Key>
+      <PropertyRef Name="IdPuntoMedicion" />
+    </Key>
+    <Property Name="IdPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="PuntoMedicionName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IdUnidadMedida" Type="bigint" Nullable="false" />
+    <Property Name="IdTipoPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="ValorReferencia" Type="float" />
+    <Property Name="ParametroReferencia" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="latiitud" Type="float" />
+    <Property Name="longitud" Type="float" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+    <Property Name="vAccion" Type="bit" />
+    <Property Name="vCondicion" Type="bit" />
+    <Property Name="Visibility" Type="bit" />
+    <Property Name="IdAccionActual" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_PUNTO_MEDICION_MAX_MIN">
+    <Key>
+      <PropertyRef Name="IdPuntoMedicionMaxMin" />
+    </Key>
+    <Property Name="IdPuntoMedicionMaxMin" Type="bigint" Nullable="false" />
+    <Property Name="IdPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="Max" Type="float" Nullable="false" />
+    <Property Name="Min" Type="float" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+    <Property Name="LastModifiedDate" Type="bigint" />
+    <Property Name="IsModified" Type="bit" />
+  </EntityType>
+  <EntityType Name="CAT_PUNTOS_MEDICION_SHORTNAME">
+    <Key>
+      <PropertyRef Name="IdShortName" />
+    </Key>
+    <Property Name="IdShortName" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdPuntoMedicion" Type="bigint" />
+    <Property Name="ShortName" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CAT_SERVER_LASTDATA">
+    <Key>
+      <PropertyRef Name="IdServerLastData" />
+    </Key>
+    <Property Name="IdServerLastData" Type="bigint" Nullable="false" />
+    <Property Name="ActualDate" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CAT_SISTEMA">
+    <Key>
+      <PropertyRef Name="IdSistema" />
+    </Key>
+    <Property Name="IdSistema" Type="bigint" Nullable="false" />
+    <Property Name="SistemaName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_SYNC">
+    <Key>
+      <PropertyRef Name="IdSycn" />
+    </Key>
+    <Property Name="IdSycn" Type="bigint" Nullable="false" />
+    <Property Name="ActualDate" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CAT_TIPO_PUNTO_MEDICION">
+    <Key>
+      <PropertyRef Name="IdTipoPuntoMedicion" />
+    </Key>
+    <Property Name="IdTipoPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="TipoPuntoMedicionName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_UNIDAD_MEDIDA">
+    <Key>
+      <PropertyRef Name="IdUnidadMedida" />
+    </Key>
+    <Property Name="IdUnidadMedida" Type="bigint" Nullable="false" />
+    <Property Name="UnidadMedidaName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="UnidadMedidaShort" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CAT_UPLOAD_LOG">
+    <Key>
+      <PropertyRef Name="IdUploadLog" />
+    </Key>
+    <Property Name="IdUploadLog" Type="bigint" Nullable="false" />
+    <Property Name="Msg" Type="nvarchar(max)" />
+    <Property Name="IpDir" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="PcName" Type="nvarchar" MaxLength="512" Nullable="false" />
+    <Property Name="IdUsuario" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CI_REGISTRO">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="bigint" Nullable="false" />
+    <Property Name="IdPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="FechaCaptura" Type="datetime" Nullable="false" />
+    <Property Name="HoraRegistro" Type="int" Nullable="false" />
+    <Property Name="DiaRegistro" Type="int" Nullable="false" />
+    <Property Name="Valor" Type="float" Nullable="false" />
+    <Property Name="AccionActual" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="IdCondicion" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+    <Property Name="FechaNumerica" Type="bigint" />
+  </EntityType>
+  <EntityType Name="CI_TRACKING">
+    <Key>
+      <PropertyRef Name="IdTracking" />
+    </Key>
+    <Property Name="IdTracking" Type="bigint" Nullable="false" />
+    <Property Name="Accion" Type="nvarchar" MaxLength="500" />
+    <Property Name="Valor" Type="nvarchar(max)" />
+    <Property Name="Ip" Type="nvarchar" MaxLength="20" />
+    <Property Name="Equipo" Type="nvarchar" MaxLength="255" />
+    <Property Name="Ubicacion" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IdUsuario" Type="bigint" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+    <Property Name="LastModifiedDate" Type="bigint" />
+    <Property Name="IdPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="FechaNumerica" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MODIFIEDDATA">
+    <Key>
+      <PropertyRef Name="IdModifiedData" />
+    </Key>
+    <Property Name="IdModifiedData" Type="bigint" Nullable="false" />
+    <Property Name="IdSyncTable" Type="bigint" />
+    <Property Name="IsModified" Type="bit" />
+    <Property Name="ServerModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="REL_EST_PUNTOMED">
+    <Key>
+      <PropertyRef Name="IdEstPuntoMed" />
+    </Key>
+    <Property Name="IdEstPuntoMed" Type="bigint" Nullable="false" />
+    <Property Name="IdEstructura" Type="bigint" Nullable="false" />
+    <Property Name="IdPuntoMedicion" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="REL_ESTRUCTURA_DEPENDENCIA">
+    <Key>
+      <PropertyRef Name="IdEstructuraDependencia" />
+    </Key>
+    <Property Name="IdEstructuraDependencia" Type="bigint" Nullable="false" />
+    <Property Name="IdDependencia" Type="bigint" Nullable="false" />
+    <Property Name="IdEstructura" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsModified" Type="bit" Nullable="false" />
+    <Property Name="LastModifiedDate" Type="bigint" Nullable="false" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="REL_ROL_PUNTOMEDICION">
+    <Key>
+      <PropertyRef Name="IdRel" />
+    </Key>
+    <Property Name="IdRel" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdRol" Type="bigint" />
+    <Property Name="IdPuntoMedicion" Type="bigint" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="LastModifiedDate" Type="bigint" />
+    <Property Name="ServerLastModifiedDate" Type="bigint" />
+  </EntityType>
+  <EntityType Name="SYNCTABLE">
+    <Key>
+      <PropertyRef Name="IdSyncTable" />
+    </Key>
+    <Property Name="IdSyncTable" Type="bigint" Nullable="false" />
+    <Property Name="SyncTableName" Type="nvarchar(max)" />
+    <Property Name="OrderTable" Type="int" />
+  </EntityType>
+  <Association Name="APP_ROL_APP_USUARIO_ROL_FK1">
+    <End Role="APP_ROL" Type="Self.APP_ROL" Multiplicity="1" />
+    <End Role="APP_USUARIO_ROL" Type="Self.APP_USUARIO_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APP_ROL">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="APP_USUARIO_ROL">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="APP_USUARIO_APP_USUARIO_ROL_FK1">
+    <End Role="APP_USUARIO" Type="Self.APP_USUARIO" Multiplicity="1" />
+    <End Role="APP_USUARIO_ROL" Type="Self.APP_USUARIO_ROL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APP_USUARIO">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="APP_USUARIO_ROL">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="APP_USUARIO_CAT_UPLOAD_LOG_FK1">
+    <End Role="APP_USUARIO" Type="Self.APP_USUARIO" Multiplicity="1" />
+    <End Role="CAT_UPLOAD_LOG" Type="Self.CAT_UPLOAD_LOG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APP_USUARIO">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="CAT_UPLOAD_LOG">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_CONDPRO_CI_REGISTRO_FK1">
+    <End Role="CAT_CONDPRO" Type="Self.CAT_CONDPRO" Multiplicity="1" />
+    <End Role="CI_REGISTRO" Type="Self.CI_REGISTRO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_CONDPRO">
+        <PropertyRef Name="IdCondicion" />
+      </Principal>
+      <Dependent Role="CI_REGISTRO">
+        <PropertyRef Name="IdCondicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_DEPENDENCIA_REL_ESTRUCTURA_DEPENDENCIA_FK1">
+    <End Role="CAT_DEPENDENCIA" Type="Self.CAT_DEPENDENCIA" Multiplicity="1" />
+    <End Role="REL_ESTRUCTURA_DEPENDENCIA" Type="Self.REL_ESTRUCTURA_DEPENDENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_DEPENDENCIA">
+        <PropertyRef Name="IdDependencia" />
+      </Principal>
+      <Dependent Role="REL_ESTRUCTURA_DEPENDENCIA">
+        <PropertyRef Name="IdDependencia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_ESTRUCTURA_REL_EST_PUNTOMED_FK1">
+    <End Role="CAT_ESTRUCTURA" Type="Self.CAT_ESTRUCTURA" Multiplicity="1" />
+    <End Role="REL_EST_PUNTOMED" Type="Self.REL_EST_PUNTOMED" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_ESTRUCTURA">
+        <PropertyRef Name="IdEstructura" />
+      </Principal>
+      <Dependent Role="REL_EST_PUNTOMED">
+        <PropertyRef Name="IdEstructura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_ESTRUCTURA_REL_ESTRUCTURA_DEPENDENCIA_FK1">
+    <End Role="CAT_ESTRUCTURA" Type="Self.CAT_ESTRUCTURA" Multiplicity="1" />
+    <End Role="REL_ESTRUCTURA_DEPENDENCIA" Type="Self.REL_ESTRUCTURA_DEPENDENCIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_ESTRUCTURA">
+        <PropertyRef Name="IdEstructura" />
+      </Principal>
+      <Dependent Role="REL_ESTRUCTURA_DEPENDENCIA">
+        <PropertyRef Name="IdEstructura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_PUNTO_MEDICION_CI_REGISTRO_FK1">
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="1" />
+    <End Role="CI_REGISTRO" Type="Self.CI_REGISTRO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Principal>
+      <Dependent Role="CI_REGISTRO">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_PUNTO_MEDICION_REL_EST_PUNTOMED_FK1">
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="1" />
+    <End Role="REL_EST_PUNTOMED" Type="Self.REL_EST_PUNTOMED" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Principal>
+      <Dependent Role="REL_EST_PUNTOMED">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_SISTEMA_CAT_ESTRUCTURA_FK1">
+    <End Role="CAT_SISTEMA" Type="Self.CAT_SISTEMA" Multiplicity="1" />
+    <End Role="CAT_ESTRUCTURA" Type="Self.CAT_ESTRUCTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_SISTEMA">
+        <PropertyRef Name="IdSistema" />
+      </Principal>
+      <Dependent Role="CAT_ESTRUCTURA">
+        <PropertyRef Name="IdSistema" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_TIPO_PUNTO_MEDICION_CAT_PUNTO_MEDICION_FK1">
+    <End Role="CAT_TIPO_PUNTO_MEDICION" Type="Self.CAT_TIPO_PUNTO_MEDICION" Multiplicity="1" />
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_TIPO_PUNTO_MEDICION">
+        <PropertyRef Name="IdTipoPuntoMedicion" />
+      </Principal>
+      <Dependent Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdTipoPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CAT_UNIDAD_MEDIDA_CAT_PUNTO_MEDICION_FK1">
+    <End Role="CAT_UNIDAD_MEDIDA" Type="Self.CAT_UNIDAD_MEDIDA" Multiplicity="1" />
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_UNIDAD_MEDIDA">
+        <PropertyRef Name="IdUnidadMedida" />
+      </Principal>
+      <Dependent Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdUnidadMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CAT_PROTO__IdPun__3552E9B6">
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="0..1" />
+    <End Role="CAT_PROTOCOLO" Type="Self.CAT_PROTOCOLO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Principal>
+      <Dependent Role="CAT_PROTOCOLO">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CAT_PUNTO__IdAcc__3A179ED3">
+    <End Role="CAT_ACCION_ACTUAL" Type="Self.CAT_ACCION_ACTUAL" Multiplicity="0..1" />
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_ACCION_ACTUAL">
+        <PropertyRef Name="IdAccionActual" />
+      </Principal>
+      <Dependent Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdAccionActual" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CAT_PUNTO__IdPun__4865BE2A">
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="0..1" />
+    <End Role="CAT_PUNTOS_MEDICION_SHORTNAME" Type="Self.CAT_PUNTOS_MEDICION_SHORTNAME" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Principal>
+      <Dependent Role="CAT_PUNTOS_MEDICION_SHORTNAME">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__CI_TRACKI__IdUsu__7D0E9093">
+    <End Role="APP_USUARIO" Type="Self.APP_USUARIO" Multiplicity="0..1" />
+    <End Role="CI_TRACKING" Type="Self.CI_TRACKING" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APP_USUARIO">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="CI_TRACKING">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__MODIFIEDD__IdSyn__7E02B4CC">
+    <End Role="SYNCTABLE" Type="Self.SYNCTABLE" Multiplicity="0..1" />
+    <End Role="MODIFIEDDATA" Type="Self.MODIFIEDDATA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SYNCTABLE">
+        <PropertyRef Name="IdSyncTable" />
+      </Principal>
+      <Dependent Role="MODIFIEDDATA">
+        <PropertyRef Name="IdSyncTable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__REL_ROL_P__IdPun__16CF2DED">
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="0..1" />
+    <End Role="REL_ROL_PUNTOMEDICION" Type="Self.REL_ROL_PUNTOMEDICION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Principal>
+      <Dependent Role="REL_ROL_PUNTOMEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__REL_ROL_P__IdRol__15DB09B4">
+    <End Role="APP_ROL" Type="Self.APP_ROL" Multiplicity="0..1" />
+    <End Role="REL_ROL_PUNTOMEDICION" Type="Self.REL_ROL_PUNTOMEDICION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="APP_ROL">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="REL_ROL_PUNTOMEDICION">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_OPERACION_ESTRUCTURA_CAT_CONDPRO">
+    <End Role="CAT_CONDPRO" Type="Self.CAT_CONDPRO" Multiplicity="1" />
+    <End Role="CAT_OPERACION_ESTRUCTURA" Type="Self.CAT_OPERACION_ESTRUCTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_CONDPRO">
+        <PropertyRef Name="IdCondicion" />
+      </Principal>
+      <Dependent Role="CAT_OPERACION_ESTRUCTURA">
+        <PropertyRef Name="IdCondicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_OPERACION_ESTRUCTURA_CAT_ESTRUCTURA">
+    <End Role="CAT_ESTRUCTURA" Type="Self.CAT_ESTRUCTURA" Multiplicity="1" />
+    <End Role="CAT_OPERACION_ESTRUCTURA" Type="Self.CAT_OPERACION_ESTRUCTURA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_ESTRUCTURA">
+        <PropertyRef Name="IdEstructura" />
+      </Principal>
+      <Dependent Role="CAT_OPERACION_ESTRUCTURA">
+        <PropertyRef Name="IdEstructura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAT_PUNTO_MEDICION_MAX_MIN_CAT_PUNTO_MEDICION">
+    <End Role="CAT_PUNTO_MEDICION" Type="Self.CAT_PUNTO_MEDICION" Multiplicity="1" />
+    <End Role="CAT_PUNTO_MEDICION_MAX_MIN" Type="Self.CAT_PUNTO_MEDICION_MAX_MIN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAT_PUNTO_MEDICION">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Principal>
+      <Dependent Role="CAT_PUNTO_MEDICION_MAX_MIN">
+        <PropertyRef Name="IdPuntoMedicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="ConcatHour" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="datetime">
+    <Parameter Name="dt" Type="datetime" Mode="In" />
+    <Parameter Name="hora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ConvertMHToString" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="nvarchar">
+    <Parameter Name="hora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GD_GET_DATOSESTRUCTURAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GD_GET_DATOSESTRUCTURAS_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GD_GET_DATOSESTRUCTURAS_OLD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="LoadCnfHora" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_ConsultaDemand" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fecha" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spCommitBulkUpsertCiRegistroUploaded" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="session" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spDownloadCiRegistroOnDemand" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FechaActual" Type="bigint" Mode="In" />
+    <Parameter Name="IdPuntoMedicion" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spDownloadCiRegistroRecurrent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FechaActual" Type="bigint" Mode="In" />
+    <Parameter Name="FechaFin" Type="bigint" Mode="In" />
+    <Parameter Name="SLMD" Type="bigint" Mode="In" />
+    <Parameter Name="LMD" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spGetHashableGraficaLumbreras" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaNumerica" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spGetHashableGraficaPromedio" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fechaNumerica" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spGetHashableGraficaPuntoMedicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPuntoMedicion" Type="bigint" Mode="In" />
+    <Parameter Name="fechaNumerica" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spGetHashableIsoyetaRangosLabels" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spGetHashablePuntoMedicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spGetHashablePuntoMedicionAttributes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idPuntoMedicion" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spGetHashableUltimaMedicion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Fecha" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="spLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Usuario" Type="nvarchar" Mode="In" />
+    <Parameter Name="Pass" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="spSelectLastCI_Registro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FechaActual" Type="varchar" Mode="In" />
+    <Parameter Name="IdPuntoMedicion" Type="bigint" Mode="In" />
+    <Parameter Name="LMD" Type="bigint" Mode="In" />
+    <Parameter Name="SLMD" Type="bigint" Mode="In" />
+    <Parameter Name="Dias" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="devinmr3ModelStoreContainer">
+    <EntitySet Name="APP_ROL" EntityType="Self.APP_ROL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="APP_SETTINGS" EntityType="Self.APP_SETTINGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="APP_USUARIO" EntityType="Self.APP_USUARIO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="APP_USUARIO_ROL" EntityType="Self.APP_USUARIO_ROL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_ACCION_ACTUAL" EntityType="Self.CAT_ACCION_ACTUAL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_AGRUPADOR_ISOYETA" EntityType="Self.CAT_AGRUPADOR_ISOYETA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_CONDPRO" EntityType="Self.CAT_CONDPRO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_DEPENDENCIA" EntityType="Self.CAT_DEPENDENCIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_ESTRUCTURA" EntityType="Self.CAT_ESTRUCTURA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_LINKS" EntityType="Self.CAT_LINKS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_OPERACION_ESTRUCTURA" EntityType="Self.CAT_OPERACION_ESTRUCTURA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_PROTOCOLO" EntityType="Self.CAT_PROTOCOLO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_PUNTO_MEDICION" EntityType="Self.CAT_PUNTO_MEDICION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_PUNTO_MEDICION_MAX_MIN" EntityType="Self.CAT_PUNTO_MEDICION_MAX_MIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_PUNTOS_MEDICION_SHORTNAME" EntityType="Self.CAT_PUNTOS_MEDICION_SHORTNAME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_SERVER_LASTDATA" EntityType="Self.CAT_SERVER_LASTDATA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_SISTEMA" EntityType="Self.CAT_SISTEMA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_SYNC" EntityType="Self.CAT_SYNC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_TIPO_PUNTO_MEDICION" EntityType="Self.CAT_TIPO_PUNTO_MEDICION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_UNIDAD_MEDIDA" EntityType="Self.CAT_UNIDAD_MEDIDA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CAT_UPLOAD_LOG" EntityType="Self.CAT_UPLOAD_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CI_REGISTRO" EntityType="Self.CI_REGISTRO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CI_TRACKING" EntityType="Self.CI_TRACKING" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MODIFIEDDATA" EntityType="Self.MODIFIEDDATA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REL_EST_PUNTOMED" EntityType="Self.REL_EST_PUNTOMED" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REL_ESTRUCTURA_DEPENDENCIA" EntityType="Self.REL_ESTRUCTURA_DEPENDENCIA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="REL_ROL_PUNTOMEDICION" EntityType="Self.REL_ROL_PUNTOMEDICION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYNCTABLE" EntityType="Self.SYNCTABLE" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="APP_ROL_APP_USUARIO_ROL_FK1" Association="Self.APP_ROL_APP_USUARIO_ROL_FK1">
+      <End Role="APP_ROL" EntitySet="APP_ROL" />
+      <End Role="APP_USUARIO_ROL" EntitySet="APP_USUARIO_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="APP_USUARIO_APP_USUARIO_ROL_FK1" Association="Self.APP_USUARIO_APP_USUARIO_ROL_FK1">
+      <End Role="APP_USUARIO" EntitySet="APP_USUARIO" />
+      <End Role="APP_USUARIO_ROL" EntitySet="APP_USUARIO_ROL" />
+    </AssociationSet>
+    <AssociationSet Name="APP_USUARIO_CAT_UPLOAD_LOG_FK1" Association="Self.APP_USUARIO_CAT_UPLOAD_LOG_FK1">
+      <End Role="APP_USUARIO" EntitySet="APP_USUARIO" />
+      <End Role="CAT_UPLOAD_LOG" EntitySet="CAT_UPLOAD_LOG" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_CONDPRO_CI_REGISTRO_FK1" Association="Self.CAT_CONDPRO_CI_REGISTRO_FK1">
+      <End Role="CAT_CONDPRO" EntitySet="CAT_CONDPRO" />
+      <End Role="CI_REGISTRO" EntitySet="CI_REGISTRO" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_DEPENDENCIA_REL_ESTRUCTURA_DEPENDENCIA_FK1" Association="Self.CAT_DEPENDENCIA_REL_ESTRUCTURA_DEPENDENCIA_FK1">
+      <End Role="CAT_DEPENDENCIA" EntitySet="CAT_DEPENDENCIA" />
+      <End Role="REL_ESTRUCTURA_DEPENDENCIA" EntitySet="REL_ESTRUCTURA_DEPENDENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_ESTRUCTURA_REL_EST_PUNTOMED_FK1" Association="Self.CAT_ESTRUCTURA_REL_EST_PUNTOMED_FK1">
+      <End Role="CAT_ESTRUCTURA" EntitySet="CAT_ESTRUCTURA" />
+      <End Role="REL_EST_PUNTOMED" EntitySet="REL_EST_PUNTOMED" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_ESTRUCTURA_REL_ESTRUCTURA_DEPENDENCIA_FK1" Association="Self.CAT_ESTRUCTURA_REL_ESTRUCTURA_DEPENDENCIA_FK1">
+      <End Role="CAT_ESTRUCTURA" EntitySet="CAT_ESTRUCTURA" />
+      <End Role="REL_ESTRUCTURA_DEPENDENCIA" EntitySet="REL_ESTRUCTURA_DEPENDENCIA" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_PUNTO_MEDICION_CI_REGISTRO_FK1" Association="Self.CAT_PUNTO_MEDICION_CI_REGISTRO_FK1">
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+      <End Role="CI_REGISTRO" EntitySet="CI_REGISTRO" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_PUNTO_MEDICION_REL_EST_PUNTOMED_FK1" Association="Self.CAT_PUNTO_MEDICION_REL_EST_PUNTOMED_FK1">
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+      <End Role="REL_EST_PUNTOMED" EntitySet="REL_EST_PUNTOMED" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_SISTEMA_CAT_ESTRUCTURA_FK1" Association="Self.CAT_SISTEMA_CAT_ESTRUCTURA_FK1">
+      <End Role="CAT_SISTEMA" EntitySet="CAT_SISTEMA" />
+      <End Role="CAT_ESTRUCTURA" EntitySet="CAT_ESTRUCTURA" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_TIPO_PUNTO_MEDICION_CAT_PUNTO_MEDICION_FK1" Association="Self.CAT_TIPO_PUNTO_MEDICION_CAT_PUNTO_MEDICION_FK1">
+      <End Role="CAT_TIPO_PUNTO_MEDICION" EntitySet="CAT_TIPO_PUNTO_MEDICION" />
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+    </AssociationSet>
+    <AssociationSet Name="CAT_UNIDAD_MEDIDA_CAT_PUNTO_MEDICION_FK1" Association="Self.CAT_UNIDAD_MEDIDA_CAT_PUNTO_MEDICION_FK1">
+      <End Role="CAT_UNIDAD_MEDIDA" EntitySet="CAT_UNIDAD_MEDIDA" />
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CAT_PROTO__IdPun__3552E9B6" Association="Self.FK__CAT_PROTO__IdPun__3552E9B6">
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+      <End Role="CAT_PROTOCOLO" EntitySet="CAT_PROTOCOLO" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CAT_PUNTO__IdAcc__3A179ED3" Association="Self.FK__CAT_PUNTO__IdAcc__3A179ED3">
+      <End Role="CAT_ACCION_ACTUAL" EntitySet="CAT_ACCION_ACTUAL" />
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CAT_PUNTO__IdPun__4865BE2A" Association="Self.FK__CAT_PUNTO__IdPun__4865BE2A">
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+      <End Role="CAT_PUNTOS_MEDICION_SHORTNAME" EntitySet="CAT_PUNTOS_MEDICION_SHORTNAME" />
+    </AssociationSet>
+    <AssociationSet Name="FK__CI_TRACKI__IdUsu__7D0E9093" Association="Self.FK__CI_TRACKI__IdUsu__7D0E9093">
+      <End Role="APP_USUARIO" EntitySet="APP_USUARIO" />
+      <End Role="CI_TRACKING" EntitySet="CI_TRACKING" />
+    </AssociationSet>
+    <AssociationSet Name="FK__MODIFIEDD__IdSyn__7E02B4CC" Association="Self.FK__MODIFIEDD__IdSyn__7E02B4CC">
+      <End Role="SYNCTABLE" EntitySet="SYNCTABLE" />
+      <End Role="MODIFIEDDATA" EntitySet="MODIFIEDDATA" />
+    </AssociationSet>
+    <AssociationSet Name="FK__REL_ROL_P__IdPun__16CF2DED" Association="Self.FK__REL_ROL_P__IdPun__16CF2DED">
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+      <End Role="REL_ROL_PUNTOMEDICION" EntitySet="REL_ROL_PUNTOMEDICION" />
+    </AssociationSet>
+    <AssociationSet Name="FK__REL_ROL_P__IdRol__15DB09B4" Association="Self.FK__REL_ROL_P__IdRol__15DB09B4">
+      <End Role="APP_ROL" EntitySet="APP_ROL" />
+      <End Role="REL_ROL_PUNTOMEDICION" EntitySet="REL_ROL_PUNTOMEDICION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_OPERACION_ESTRUCTURA_CAT_CONDPRO" Association="Self.FK_CAT_OPERACION_ESTRUCTURA_CAT_CONDPRO">
+      <End Role="CAT_CONDPRO" EntitySet="CAT_CONDPRO" />
+      <End Role="CAT_OPERACION_ESTRUCTURA" EntitySet="CAT_OPERACION_ESTRUCTURA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_OPERACION_ESTRUCTURA_CAT_ESTRUCTURA" Association="Self.FK_CAT_OPERACION_ESTRUCTURA_CAT_ESTRUCTURA">
+      <End Role="CAT_ESTRUCTURA" EntitySet="CAT_ESTRUCTURA" />
+      <End Role="CAT_OPERACION_ESTRUCTURA" EntitySet="CAT_OPERACION_ESTRUCTURA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAT_PUNTO_MEDICION_MAX_MIN_CAT_PUNTO_MEDICION" Association="Self.FK_CAT_PUNTO_MEDICION_MAX_MIN_CAT_PUNTO_MEDICION">
+      <End Role="CAT_PUNTO_MEDICION" EntitySet="CAT_PUNTO_MEDICION" />
+      <End Role="CAT_PUNTO_MEDICION_MAX_MIN" EntitySet="CAT_PUNTO_MEDICION_MAX_MIN" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
